@@ -3,13 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="63f8d6d8-9057-499b-be97-86810fe7eb32" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/srcheke/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/srcheke/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/srcheke/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/srcheke/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/bootstrap/jquery/jquery.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/bootstrap/popper/popper.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/header.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/userprofile/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/userprofile/views.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -37,7 +30,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/srcheke/settings.py" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/manage.py" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.django.DjangoModulesConfigurable" />
   </component>
   <component name="RunDashboard">
@@ -89,7 +82,7 @@
       <option name="presentableId" value="Default" />
       <updated>1567505823165</updated>
       <workItem from="1567506366747" duration="3977000" />
-      <workItem from="1567521187531" duration="300000" />
+      <workItem from="1567521187531" duration="1560000" />
     </task>
     <servers />
   </component>
