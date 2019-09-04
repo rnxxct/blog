@@ -5,6 +5,19 @@ import markdown
 from .forms import ArticlePostForm
 from django.contrib.auth.models import User
 from django.core.paginator import Paginator
+import os
+
+
+def article_index(request):
+    return render(request, 'index.html')
+
+
+def article_index_png(request):
+    curr_dir = os.path.dirname(__file__)
+    parent_path = os.path.dirname(curr_dir)
+    image_path = os.path.join(parent_path, "static/assets/cloud10.png")
+    image_data = open(image_path, "rb").read()
+    return HttpResponse(image_data, content_type='image/jpg')
 
 
 # 视图函数
