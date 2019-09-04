@@ -4,11 +4,18 @@ from .models import ArticlePost
 import markdown
 from .forms import ArticlePostForm
 from django.contrib.auth.models import User
+from django.core.paginator import Paginator
 
 
 # 视图函数
 def article_list(request):
-    articles = ArticlePost.objects.all()
+    # articles = ArticlePost.objects.all()
+    article_list = ArticlePost.objects.all()
+    paginator = Paginator(article_list, 3)
+    # 获取 url 中的页码
+    page = request.GET.get('page')
+    # 将导航对象相应的页码内容返回给 articles
+    articles = paginator.get_page(page)
     for article in articles:
         article.body = markdown.markdown(article.body, extensions=[
             # 包含 缩写、表格等常用扩展
