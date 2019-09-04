@@ -4,9 +4,8 @@
 <!DOCTYPE HTML>
 <html lang="zh-cn">
 <head>
-    <title>HTML5 云朵效果</title>
+    <title>Srcheke</title>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="http://dreamsky.github.io/main/blog/common/init.css">
     <style type="text/css">
         body {
             background-color: #326696;
@@ -24,7 +23,13 @@
         }
     </style>
 </head>
-<body>
+<body id="body">
+<script>
+    var type = 'click'; // touchstart,touchend,touchmove可以
+    document.addEventListener(type, function () {
+        window.location.href='http://localhost:8000/article/article-list';
+    })
+</script>
 <script type="text/javascript" src="{% static 'assets/three.min.js' %}"></script>
 <script type="text/javascript" src="{% static 'assets/Detector.js' %}"></script>
 <script id="vs" type="x-shader/x-vertex">
@@ -37,6 +42,7 @@
 				gl_Position = projectionMatrix * modelViewMatrix * vec4( position, 1.0 );
 
 			}
+
 
 
 </script>
@@ -61,6 +67,7 @@
 				gl_FragColor = mix( gl_FragColor, vec4( fogColor, gl_FragColor.w ), fogFactor );
 
 			}
+
 
 
 </script>
